@@ -1,0 +1,344 @@
+/* *,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #57657861;
+}
+.container{
+    width: 40%;
+    min-width: 450px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    padding: 50px 30px;
+}
+.container *{
+    font-family: "Poppins",sans-serif;
+    border: none;
+    outline: none;
+}
+.inputs-wrapper{
+    background-color: #080808;
+    padding: 30px 25px;
+    border-radius: 8px;
+    box-shadow: 0 15px 20px rgba(0,0,0,0.3);
+    margin-bottom: 50px;
+}
+input,
+button{
+    height: 50px;
+    background-color: #ffffff;
+    color: #080808;
+    font-weight: 500;
+    border-radius: 5px;
+}
+input{
+    width: 60%;
+    padding: 0 20px;
+    font-size: 14px;
+}
+button{
+    width: 30%;
+    float: right;
+}
+.outputs-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.outputs-wrapper div{
+    height: 100px;
+    width: 100px;
+    background-color: #080808;
+    border-radius: 5px;
+    color: #ffffff;
+    display: grid;
+    place-items: center;
+    padding: 20px 0;
+    box-shadow: 0 15px 20px rgba(0,0,0,0.3);
+}
+span{
+    font-size: 30px;
+    font-weight: 500;
+}
+p{
+    font-size: 14px;
+    color: #707070;
+    font-weight: 400;
+} */
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* .navbar-brand img {
+    width: 50px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.inputs-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+#date-input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    transition: box-shadow 0.3s ease;
+}
+
+#date-input:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+.outputs-wrapper {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.outputs-wrapper div {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 120px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.outputs-wrapper div:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+.outputs-wrapper span {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+#alert-container {
+    margin-top: 15px;
+    color: #dc3545;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .outputs-wrapper {
+        flex-direction: column;
+        gap: 15px;
+    }
+} */
+
+
+/* Reset and Box Sizing */
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    background-color: #c1c1c103;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Header Styling */
+.header {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+/* Add decorative ::before and ::after to the header */
+.header::before,
+.header::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    background-color: #007bff;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header::before {
+    left: 23px;
+}
+
+.header::after {
+    right: 23px;
+}
+
+/* Container Styling */
+.container {
+    width: 40%;
+    min-width: 450px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    padding: 50px 30px;
+   
+
+.container:hover {
+    transform: translate(-50%, -50%) scale(1.02); /* Subtle hover effect */
+}
+
+/* Input and Button Styling */
+.inputs-wrapper {
+    background-color: #080808;
+    padding: 30px 25px;
+    border-radius: 8px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    margin-bottom: 50px;
+}
+
+input, button {
+    height: 50px;
+    background-color: #ffffff;
+    color: #080808;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+input {
+    width: 60%;
+    padding: 0 20px;
+    font-size: 14px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+input:focus {
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+button {
+    width: 30%;
+    float: right;
+    background-color: #007bff;
+    color: #ffffff;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 123, 255, 0.3);
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 123, 255, 0.5);
+}
+
+/* Output Wrapper Styling */
+.outputs-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.outputs-wrapper div {
+    height: 100px;
+    width: 100px;
+    background-color: #080808;
+    border-radius: 5px;
+    color: #ffffff;
+    display: grid;
+    place-items: center;
+    padding: 20px 0;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.outputs-wrapper div:hover {
+    background-color: #007bff; /* Adds dynamic color change */
+    transform: scale(1.05);
+}
+
+span {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 14px;
+    color: #707070;
+    font-weight: 400;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        min-width: unset; /* Removes the minimum width */
+    }
+
+    input {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+        float: none;
+    }
+
+    .outputs-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .outputs-wrapper div {
+        width: 80px;
+        height: 80px;
+    }
+}
+}
